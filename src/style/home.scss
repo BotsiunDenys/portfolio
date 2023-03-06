@@ -1,0 +1,117 @@
+@import "../index.scss";
+
+.homePage {
+  background-color: $bg-color;
+  &_header {
+    padding: 0 40px 20px;
+    font-size: 26px;
+    color: white;
+  }
+  &_title {
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    &_textWrap {
+      margin: 10px 0;
+      font-size: 60px;
+    }
+    &_text {
+      display: inline-block;
+      color: $first-font-color;
+      overflow: hidden;
+      border-right: 3px solid;
+      white-space: nowrap;
+      margin: 0 auto;
+      animation: typing 3.5s steps(27) alternate infinite,
+        blink 0.4s step-end infinite alternate;
+    }
+  }
+  &_parallaxImg {
+    height: 600px;
+    background: url("../img/home-bg.jpg") center/cover no-repeat fixed;
+    box-shadow: 0 0 40px black;
+  }
+  &_parallaxImgSecond {
+    height: 600px;
+    background: url("../img/home-bg2.jpg") center/cover no-repeat fixed;
+    box-shadow: 0 0 40px black;
+  }
+  &_decoration {
+    margin: 20px 0;
+    text-align: center;
+    font-size: 50px;
+    color: $third-font-color;
+  }
+  &_about {
+    text-align: center;
+    margin: 30px 0;
+  }
+  &_aboutTitle {
+    font-size: 60px;
+    color: white;
+  }
+  &_aboutSubtitle {
+    font-size: 30px;
+    color: $first-font-color;
+  }
+  &_projects {
+    text-align: center;
+    margin: 30px 0;
+  }
+  &_projectsTitle {
+    font-size: 60px;
+    color: white;
+  }
+  &_projectsSubtitle {
+    font-size: 30px;
+    color: $first-font-color;
+  }
+  &_readMore {
+    display: inline-block;
+    font-size: 26px;
+    margin: 20px;
+    padding: 10px;
+    color: white;
+    background-color: $third-font-color;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: .3s all ease-in-out;
+    &:hover {
+        background-color: $second-font-color;
+    }
+  }
+  &_footer {
+    height: 50px;
+    margin: auto 0 10px 0;
+    &_socials {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &_singleSocial {
+        margin: 0 15px;
+        font-size: 20px;
+        color: $third-font-color;
+        transition: 0.2s all ease-in-out;
+        &:hover {
+            color: $second-font-color;
+        }
+    }
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 27ch;
+  }
+}

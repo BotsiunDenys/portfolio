@@ -1,12 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "VT323", sans-serif;
-
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "VT323", sans-serif;
 }
-$bg-color: rgb(33,33,33);
-$first-font-color: rgb(230,219,116);
-$second-font-color: rgb(47,203,239);
-$third-font-color: rgb(154,153,255);
+$bg-color: rgb(33, 33, 33);
+$first-font-color: rgb(230, 219, 116);
+$second-font-color: rgb(47, 203, 239);
+$third-font-color: rgb(154, 153, 255);
+body {
+    background-color: $bg-color;
+    min-height: 100vh;
+}

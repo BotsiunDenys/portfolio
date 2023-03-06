@@ -2,50 +2,21 @@
 
 .menu {
   display: flex;
-  flex-direction: column;
-  position: fixed;
+  justify-content: flex-end;
   background-color: $bg-color;
-  width: 80px;
-  height: 100vh;
   transition: all 0.3s ease-in-out;
-  &_openMenu {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin: 10px auto;
-    cursor: pointer;
-    &_bar {
-      text-align: center;
-      width: 40px;
-      height: 2px;
-      background-color: $first-font-color;
-    }
-    &_bar + &_bar {
-      margin-top: 10px;
-    }
-  }
+  padding: 20px 40px 0;
   &_link {
-    display: flex;
-    align-items: center;
+    font-size: 24px;
     color: $first-font-color;
-    margin: 10px 25px;
     text-decoration: none;
     transition: 0.2s all ease-in-out;
+    margin-left: 20px;
+    &:focus {
+      color: $second-font-color;
+    }
     &:hover {
       color: $third-font-color;
     }
-    &_icon {
-      font-size: 30px;
-    }
-    &_undertext {
-      display: none;
-    }
-  }
-}
-.menuWide {
-  width: 10%;
-  &_visibleUndertext {
-    font-size: 20px;
-    padding-left: 10px;
   }
 }

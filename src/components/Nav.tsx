@@ -1,7 +1,4 @@
 import { Link, Outlet } from "react-router-dom";
-import { AiFillHome, AiFillContacts } from "react-icons/ai";
-import { FiSearch } from "react-icons/fi";
-import { BsCodeSlash } from "react-icons/bs";
 import "../style/menu.scss";
 
 interface Props {
@@ -12,54 +9,18 @@ interface Props {
 const Nav = ({ visibleNav, setVisibleNav }: Props) => {
   return (
     <>
-      <nav className={!visibleNav ? "menu" : "menu menuWide"}>
-        <div
-          className="menu_openMenu"
-          onClick={() => setVisibleNav((prev) => !prev)}
-        >
-          <div className="menu_openMenu_bar"></div>
-          <div className="menu_openMenu_bar"></div>
-          <div className="menu_openMenu_bar"></div>
-        </div>
+      <nav className="menu">
         <Link to="." className="menu_link">
-          <AiFillHome className="menu_link_icon" />
-          <span
-            className={
-              !visibleNav ? "menu_link_undertext" : "menuWide_visibleUndertext"
-            }
-          >
-            Home
-          </span>
+          _home
         </Link>
         <Link to="/about" className="menu_link">
-          <FiSearch className="menu_link_icon" />
-          <span
-            className={
-              !visibleNav ? "menu_link_undertext" : "menuWide_visibleUndertext"
-            }
-          >
-            About
-          </span>
+          _about
         </Link>
         <Link to="/projects" className="menu_link">
-          <BsCodeSlash className="menu_link_icon" />
-          <span
-            className={
-              !visibleNav ? "menu_link_undertext" : "menuWide_visibleUndertext"
-            }
-          >
-            Projects
-          </span>
+          _projects
         </Link>
         <Link to="/contact" className="menu_link">
-          <AiFillContacts className="menu_link_icon" />
-          <span
-            className={
-              !visibleNav ? "menu_link_undertext" : "menuWide_visibleUndertext"
-            }
-          >
-            Contact
-          </span>
+          _contact
         </Link>
       </nav>
       <Outlet />
