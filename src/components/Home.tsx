@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { BsTelegram, BsLinkedin, BsGithub } from "react-icons/bs";
 import "../style/home.scss";
 
-const Home = () => {
+const Home: React.FC<{}> = () => {
   return (
     <div className="homePage">
       <header className="homePage_header">&#x2f;&#x2f; Denys Botsiun</header>

@@ -1,12 +1,7 @@
 import { Link, Outlet } from "react-router-dom";
 import "../style/menu.scss";
 
-interface Props {
-  visibleNav: boolean;
-  setVisibleNav: React.Dispatch<React.SetStateAction<boolean>>;
-}
-
-const Nav = ({ visibleNav, setVisibleNav }: Props) => {
+const Nav: React.FC<{}> = () => {
   return (
     <>
       <nav className="menu">
