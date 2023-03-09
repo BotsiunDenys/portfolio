@@ -10,6 +10,16 @@ $first-font-color: rgb(230, 219, 116);
 $second-font-color: rgb(47, 203, 239);
 $third-font-color: rgb(154, 153, 255);
 body {
-    background-color: $bg-color;
-    min-height: 100vh;
+  background-color: $bg-color;
+  min-height: 100vh;
+}
+#root {
+  background-color: $bg-color;
+  min-height: 100vh;
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
 }

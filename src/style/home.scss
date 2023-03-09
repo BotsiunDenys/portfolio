@@ -10,12 +10,12 @@
   &_title {
     display: flex;
     flex-direction: column;
-    font-size: 30px;
+    font-size: 50px;
     text-align: center;
     color: white;
     &_textWrap {
       margin: 10px 0;
-      font-size: 60px;
+      font-size: 100px;
     }
     &_text {
       display: inline-block;
@@ -24,7 +24,7 @@
       border-right: 3px solid;
       white-space: nowrap;
       margin: 0 auto;
-      animation: typing 3.5s steps(27) alternate infinite,
+      animation: typingHome 3.5s steps(27) alternate infinite,
         blink 0.4s step-end infinite alternate;
     }
   }
@@ -77,37 +77,33 @@
     background-color: $third-font-color;
     border-radius: 5px;
     text-decoration: none;
-    transition: .3s all ease-in-out;
+    transition: 0.3s all ease-in-out;
     &:hover {
-        background-color: $second-font-color;
+      background-color: $second-font-color;
     }
   }
   &_footer {
     height: 50px;
     margin: auto 0 10px 0;
     &_socials {
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
     &_singleSocial {
-        margin: 0 15px;
-        font-size: 20px;
-        color: $third-font-color;
-        transition: 0.2s all ease-in-out;
-        &:hover {
-            color: $second-font-color;
-        }
+      margin: 0 15px;
+      font-size: 20px;
+      color: $third-font-color;
+      transition: 0.2s all ease-in-out;
+      &:hover {
+        color: $second-font-color;
+      }
     }
   }
 }
-@keyframes blink {
-  50% {
-    border-color: transparent;
-  }
-}
-@keyframes typing {
+
+@keyframes typingHome {
   from {
     width: 0;
   }

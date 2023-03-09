@@ -1,3 +1,99 @@
+@import "../index.scss";
+
 .formPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 400px;
+  color: white;
+  text-align: center;
+  &_header {
+    &_textWrap {
+      margin: 10px 0;
+      font-size: 100px;
+    }
+    &_text {
+      display: inline-block;
+      color: $first-font-color;
+      overflow: hidden;
+      border-right: 3px solid;
+      white-space: nowrap;
+      margin: 0 auto;
+      animation: typingContact 1s steps(9),
+        blink 0.4s step-end infinite alternate;
+    }
+  }
+  &_inputArea {
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+  }
+  &_input {
+    font-size: 20px;
+    border-width: 0 0 1px;
+    border-style: solid;
+    outline: none;
+    background-color: $bg-color;
+    padding: 25px 10px;
+    color: $third-font-color;
+    margin-bottom: 40px;
+    width: 100%;
+    transition: 0.3s border-color ease-in-out;
+    &::placeholder {
+      color: $third-font-color;
+    }
+  }
+  &_inputError {
+    border-color: rgba(255, 0, 0, 0.514);
+    margin: 0;
+  }
+  &_label {
+    color: $first-font-color;
+    display: none;
+  }
+  &_error {
+    font-size: 20px;
+    color: rgba(255, 0, 0, 0.514);
+    padding: 10px 0;
+  }
+  &_submitBtn {
+    font-size: 26px;
+    padding: 10px 25px;
+    background-color: $second-font-color;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
     color: white;
+    transition: 0.3s all ease-in-out;
+    text-align: center;
+    &:hover {
+      background-color: $third-font-color;
+    }
+  }
+  &_contactInfo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin: 50px 0;
+  }
+  &_oneContact {
+    font-size: 28px;
+    padding: 15px;
+    &_icon {
+      font-size: 50px;
+      color: $third-font-color;
+      transition: 0.3s all ease-in-out;
+      &:hover {
+        color: $second-font-color;
+      }
+    }
+  }
+}
+@keyframes typingContact {
+  from {
+    width: 0;
+  }
+  to {
+    width: 9ch;
+  }
 }
