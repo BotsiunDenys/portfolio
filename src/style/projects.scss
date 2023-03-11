@@ -1,0 +1,117 @@
+@import "../index.scss";
+
+.projectsPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  &_name {
+    padding: 0 40px 20px;
+    font-size: 26px;
+    align-self: flex-start;
+  }
+  &_header {
+    &_textWrap {
+      margin: 10px 0;
+      font-size: 100px;
+    }
+    &_text {
+      display: inline-block;
+      color: $first-font-color;
+      overflow: hidden;
+      border-right: 3px solid;
+      white-space: nowrap;
+      margin: 0 auto;
+      animation: typingProjects 1s steps(9),
+        blink 0.4s step-end infinite alternate;
+    }
+  }
+  &_main {
+    display: flex;
+    flex-direction: column;
+  }
+  &_singleProject {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    animation: item-appearing 1s;
+    &_title {
+      font-size: 60px;
+      text-align: center;
+      color: $third-font-color;
+      margin: 20px 0;
+    }
+    &_description {
+      font-size: 30px;
+      padding: 20px;
+      max-width: 800px;
+    }
+    &_skills {
+      display: grid;
+      font-size: 24px;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 20px;
+      padding: 0 20px;
+    }
+    &_singleSkill {
+      padding: 5px;
+      background-color: #7a7a7a;
+      border-radius: 5px;
+      text-align: center;
+    }
+  }
+}
+
+.DringgleImg {
+  background: url("../img/dringgleScreen.jpg") center/cover no-repeat;
+  height: 400px;
+  width: 800px;
+  box-shadow: 0 0 100px rgb(0, 0, 0);
+  border-radius: 10px;
+  transition: 0.7s all;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.PortfolioImg {
+  background: url("../img/portfolioScreen.jpg") center/cover no-repeat;
+  height: 400px;
+  width: 800px;
+  box-shadow: 0 0 100px rgb(0, 0, 0);
+  border-radius: 10px;
+  cursor: context-menu;
+}
+
+.comfyImg {
+  background: url("../img/comfyScreen.jpg") center/cover;
+  height: 400px;
+  width: 800px;
+  box-shadow: 0 0 100px rgb(0, 0, 0);
+  border-radius: 10px;
+  transition: 0.7s all;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.layoutImg {
+  background: url("../img/layoutScreen.jpg") center/cover;
+  height: 400px;
+  width: 800px;
+  box-shadow: 0 0 100px rgb(0, 0, 0);
+  border-radius: 10px;
+  transition: 0.7s all;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes typingProjects {
+  from {
+    width: 0;
+  }
+  to {
+    width: 9ch;
+  }
+}

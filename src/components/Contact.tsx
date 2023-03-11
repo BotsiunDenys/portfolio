@@ -46,13 +46,13 @@ const Contact: React.FC<{}> = () => {
 
   return (
     <div className="formPage">
-      <section className="formPage_header">
+      <header className="formPage_header">
         <p className="formPage_header_textWrap">
           &#x2774;&nbsp;&quot;
           <span className="formPage_header_text">_contact</span>
           &quot;&nbsp;&#x2775;
         </p>
-      </section>
+      </header>
       <Formik
         initialValues={initialValues}
         onSubmit={(values, actions) => {
@@ -107,7 +107,10 @@ const Contact: React.FC<{}> = () => {
           </p>
         </section>
         <section className="formPage_oneContact">
-          <Link to="https://github.com/BotsiunDenys" className="formPage_oneContact_link">
+          <Link
+            to="https://github.com/BotsiunDenys"
+            className="formPage_oneContact_link"
+          >
             <BsGithub className="formPage_oneContact_icon" />
           </Link>
           <p className="formPage_oneContact_value">github.com/BotsiunDenys</p>

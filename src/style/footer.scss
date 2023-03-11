@@ -1,0 +1,22 @@
+@import "../index.scss";
+
+.footer {
+  height: 50px;
+  width: 100%;
+  margin: auto 0 10px 0;
+  &_socials {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &_singleSocial {
+    margin: 0 15px;
+    font-size: 20px;
+    color: $third-font-color;
+    transition: 0.2s all ease-in-out;
+    &:hover {
+      color: $second-font-color;
+    }
+  }
+}

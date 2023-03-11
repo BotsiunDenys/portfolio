@@ -1,0 +1,17 @@
+export const skills: string[] = [
+  "Typescript",
+  "Javascript",
+  "React",
+  "React router",
+  "Redux/Redux toolkit",
+  "Formik",
+  "Yup",
+  "CSS",
+  "SCSS",
+  "Responsive/Adaptive design",
+  "HTML",
+  "npm",
+  "prettier",
+  "stylelint",
+  "eslint",
+];
