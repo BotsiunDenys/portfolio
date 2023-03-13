@@ -18,5 +18,8 @@
     &:hover {
       color: $second-font-color;
     }
+    @media (max-width: 750px) {
+      font-size: 18px;
+    }
   }
 }

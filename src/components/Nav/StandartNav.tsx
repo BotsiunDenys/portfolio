@@ -1,9 +1,8 @@
-import { Link, Outlet } from "react-router-dom";
-import "../style/menu.scss";
+import { Link } from "react-router-dom";
+import "../../style/menu.scss";
 
-const Nav: React.FC<{}> = () => {
+const StandartNav: React.FC<{}> = () => {
   return (
-    <>
       <nav className="menu">
         <Link to="." className="menu_link">
           _home
@@ -18,9 +17,7 @@ const Nav: React.FC<{}> = () => {
           _contact
         </Link>
       </nav>
-      <Outlet />
-    </>
   );
 };
 
-export default Nav;
+export default StandartNav;

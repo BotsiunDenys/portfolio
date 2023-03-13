@@ -9,11 +9,26 @@
     padding: 0 40px 20px;
     font-size: 26px;
     align-self: flex-start;
+    @media (max-width: 800px) {
+      font-size: 18px;
+    }
   }
   &_header {
     &_textWrap {
       margin: 10px 0;
       font-size: 100px;
+      @media (max-width: 1500px) {
+        font-size: 75px;
+      }
+      @media (max-width: 1000px) {
+        font-size: 50px;
+      }
+      @media (max-width: 750px) {
+        font-size: 30px;
+      }
+      @media (max-width: 400px) {
+        font-size: 20px;
+      }
     }
     &_text {
       display: inline-block;
@@ -33,6 +48,7 @@
   &_singleProject {
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin-bottom: 50px;
     animation: item-appearing 1s;
     &_title {
@@ -40,11 +56,25 @@
       text-align: center;
       color: $third-font-color;
       margin: 20px 0;
+      @media (max-width: 1000px) {
+        font-size: 40px;
+      }
+      @media (max-width: 500px) {
+        font-size: 30px;
+      }
     }
     &_description {
       font-size: 30px;
       padding: 20px;
       max-width: 800px;
+      @media (max-width: 1000px) {
+        font-size: 24px;
+        max-width: 500px;
+      }
+      @media (max-width: 500px) {
+        font-size: 18px;
+        max-width: 300px;
+      }
     }
     &_skills {
       display: grid;
@@ -52,6 +82,14 @@
       grid-template-columns: 1fr 1fr 1fr 1fr;
       gap: 20px;
       padding: 0 20px;
+      @media (max-width: 1000px) {
+        font-size: 20px;
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+      @media (max-width: 500px) {
+        font-size: 16px;
+        grid-template-columns: 1fr 1fr;
+      }
     }
     &_singleSkill {
       padding: 5px;
@@ -72,6 +110,16 @@
   &:hover {
     transform: scale(1.1);
   }
+  @media (max-width: 1000px) {
+    background-size: contain;
+    box-shadow: 0 0 30px solid black;
+    height: 250px;
+    width: 500px;
+  }
+  @media (max-width: 500px) {
+    height: 150px;
+    width: 300px;
+  }
 }
 
 .PortfolioImg {
@@ -81,6 +129,16 @@
   box-shadow: 0 0 100px rgb(0, 0, 0);
   border-radius: 10px;
   cursor: context-menu;
+  @media (max-width: 1000px) {
+    background-size: contain;
+    box-shadow: 0 0 30px solid black;
+    height: 250px;
+    width: 500px;
+  }
+  @media (max-width: 500px) {
+    height: 150px;
+    width: 300px;
+  }
 }
 
 .comfyImg {
@@ -93,6 +151,16 @@
   &:hover {
     transform: scale(1.1);
   }
+  @media (max-width: 1000px) {
+    background-size: contain;
+    box-shadow: 0 0 30px solid black;
+    height: 250px;
+    width: 500px;
+  }
+  @media (max-width: 500px) {
+    height: 150px;
+    width: 300px;
+  }
 }
 
 .layoutImg {
@@ -104,6 +172,16 @@
   transition: 0.7s all;
   &:hover {
     transform: scale(1.1);
+  }
+  @media (max-width: 1000px) {
+    background-size: contain;
+    box-shadow: 0 0 30px solid black;
+    height: 250px;
+    width: 500px;
+  }
+  @media (max-width: 500px) {
+    height: 150px;
+    width: 300px;
   }
 }
 

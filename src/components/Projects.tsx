@@ -1,7 +1,7 @@
+import { Link } from "react-router-dom";
 import { projects } from "./data/projects";
 import Footer from "./Footer";
 import "../style/projects.scss";
-import { Link } from "react-router-dom";
 
 const Projects: React.FC<{}> = () => {
   return (

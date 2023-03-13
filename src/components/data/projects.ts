@@ -22,8 +22,6 @@ export const projects: Array<Projects> = [
       "Redux Persist",
       "SCSS",
       "HTML",
-      "stylelint",
-      "eslint",
       "Adaptive design",
     ],
   },
@@ -43,7 +41,6 @@ export const projects: Array<Projects> = [
       "SCSS",
       "HTML",
       "Adaptive design",
-      "prettier",
     ],
   },
   {
@@ -52,7 +49,7 @@ export const projects: Array<Projects> = [
     link: "https://comfy-store-app.vercel.app/",
     description: "// Furniture store",
     img: "../../img/comfyScreen.jpg",
-    stack: ["Javascript", "SCSS", "HTML", "Prettier", "Responsive design"],
+    stack: ["Javascript", "SCSS", "HTML", "Adaptive design"],
   },
   {
     name: "e-commerce layout",
@@ -60,6 +57,6 @@ export const projects: Array<Projects> = [
     link: "https://ecommerse-layout.vercel.app/",
     description: "// Pixel perfect layout build from figma design",
     img: "../../img/layoutScreen.jpg",
-    stack: ["HTML", "CSS", "Responsive design"],
+    stack: ["HTML", "CSS", "Adaptive design"],
   },
 ];

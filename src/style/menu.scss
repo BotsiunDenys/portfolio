@@ -6,6 +6,9 @@
   background-color: $bg-color;
   transition: all 0.3s ease-in-out;
   padding: 20px 40px 0;
+  @media (max-width: 1000px) {
+    display: none;
+  }
   &_link {
     font-size: 24px;
     color: $first-font-color;
@@ -19,4 +22,65 @@
       color: $third-font-color;
     }
   }
+}
+
+.mobileMenu {
+  display: none;
+  @media (max-width: 1000px) {
+    display: flex;
+    justify-content: flex-end;
+  }
+  &_toggleIcon {
+    font-size: 30px;
+    color: $first-font-color;
+    margin: 20px 30px 0 0;
+    transition: 0.2s all ease-in-out;
+    cursor: pointer;
+    &:hover {
+      color: $third-font-color;
+    }
+  }
+  &_navigation {
+    position: absolute;
+    width: 100%;
+    background: rgba(33, 33, 33);
+    transition: 0.4s all ease-in-out;
+    animation: item-appearing .3s ease-in-out;
+  }
+  &_closeMenu {
+    font-size: 30px;
+    color: white;
+    transition: 0.2s all ease-in-out;
+    cursor: pointer;
+    margin: 20px;
+    &:hover {
+      color: $second-font-color;
+    }
+  }
+  &_link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $first-font-color;
+    text-decoration: none;
+    margin-bottom: 30px;
+    transition: 0.2s all ease-in-out;
+    &:hover {
+      color: $third-font-color;
+    }
+    &:focus {
+      color: $second-font-color;
+    }
+    &_icon {
+      font-size: 30px;
+    }
+    &_text {
+      font-size: 20px;
+    }
+  }
+}
+
+.hidden {
+  display: none;
 }

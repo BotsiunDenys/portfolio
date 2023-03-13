@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { BsTelegram, BsLinkedin, BsGithub } from "react-icons/bs";
+import Footer from "./Footer";
 import "../style/home.scss";
 
 const Home: React.FC<{}> = () => {
@@ -45,20 +45,7 @@ const Home: React.FC<{}> = () => {
       <p className="homePage_decoration">&#60;img&#62;</p>
         <div className="homePage_parallaxImgSecond"></div>
         <p className="homePage_decoration">&#60;/&#62;</p>
-      <footer className="homePage_footer">
-        <hr />
-        <div className="homePage_footer_socials">
-          <Link className="homePage_footer_singleSocial" to="https://t.me/denisbots">
-            <BsTelegram />
-          </Link>
-          <Link className="homePage_footer_singleSocial" to="https://www.linkedin.com/in/denys-botsiun">
-            <BsLinkedin />
-          </Link>
-          <Link className="homePage_footer_singleSocial" to="https://github.com/BotsiunDenys">
-            <BsGithub />
-          </Link>
-        </div>
-      </footer>
+        <Footer />
     </div>
   );
 };

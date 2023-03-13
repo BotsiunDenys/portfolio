@@ -7,10 +7,34 @@
   margin: 0 400px;
   color: white;
   text-align: center;
+  @media (max-width: 1600px) {
+    margin: 0 200px;
+  }
+  @media (max-width: 1200px) {
+    margin: 0 100px;
+  }
+  @media (max-width: 1000px) {
+    margin: 0 50px;
+  }
+  @media (max-width: 900px) {
+    margin: 0 20px;
+  }
   &_header {
     &_textWrap {
       margin: 10px 0;
       font-size: 100px;
+      @media (max-width: 1500px) {
+        font-size: 75px;
+      }
+      @media (max-width: 1000px) {
+        font-size: 50px;
+      }
+      @media (max-width: 750px) {
+        font-size: 30px;
+      }
+      @media (max-width: 400px) {
+        font-size: 20px;
+      }
     }
     &_text {
       display: inline-block;
@@ -27,6 +51,9 @@
     display: flex;
     flex-direction: column;
     font-size: 24px;
+    @media (max-width: 800px) {
+      font-size: 18px;
+    }
   }
   &_input {
     font-size: 20px;
@@ -69,20 +96,54 @@
     &:hover {
       background-color: $third-font-color;
     }
+    @media (max-width: 1000px) {
+      font-size: 20px;
+    }
+    @media (max-width: 750px) {
+      padding: 5px;
+      font-size: 18px;
+    }
+    @media (max-width: 400px) {
+      font-size: 16px;
+    }
   }
   &_contactInfo {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
     margin: 50px 0;
+    @media (max-width: 600px) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @media (max-width: 400px) {
+      grid-template-columns: 1fr;
+    }
   }
   &_oneContact {
     font-size: 28px;
     padding: 15px;
+    @media (max-width: 1000px) {
+      font-size: 24px;
+    }
+    @media (max-width: 800px) {
+      font-size: 20px;
+    }
+    @media (max-width: 600px) {
+      font-size: 16px;
+    }
     &_icon {
       font-size: 50px;
       color: $third-font-color;
       transition: 0.3s all ease-in-out;
+      @media (max-width: 1000px) {
+        font-size: 30px;
+      }
+      @media (max-width: 800px) {
+        font-size: 24px;
+      }
+      @media (max-width: 1000px) {
+        font-size: 20px;
+      }
       &:hover {
         color: $second-font-color;
       }
