@@ -11,4 +11,5 @@ export const skills: string[] = [
   "Responsive/Adaptive design",
   "HTML",
   "npm",
+  "git",
 ];

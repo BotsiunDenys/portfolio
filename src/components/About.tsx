@@ -4,12 +4,12 @@ import "../style/about.scss";
 
 const About: React.FC<{}> = () => {
   const downloadCV = () => {
-    fetch("CV_Botsiun_Denys_frontendDev.pdf").then((response) => {
+    fetch("CV_Botsiun_Denys_frontend_dev.pdf").then((response) => {
       response.blob().then((blob) => {
         const fileURL = window.URL.createObjectURL(blob);
         let alink = document.createElement("a");
         alink.href = fileURL;
-        alink.download = "CV_Botsiun_Denys_frontendDev.pdf";
+        alink.download = "CV_Botsiun_Denys_frontend_dev.pdf";
         alink.click();
       });
     });
