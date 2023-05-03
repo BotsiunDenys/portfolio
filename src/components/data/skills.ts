@@ -1,10 +1,12 @@
 export const skills: string[] = [
   "Typescript",
   "Javascript",
+  "Webpack",
   "React",
   "React router",
   "Redux/Redux toolkit",
   "Formik + Yup",
+  "Tailwind CSS",
   "CSS",
   "SCSS",
   "BEM",
@@ -12,4 +14,5 @@ export const skills: string[] = [
   "HTML",
   "npm",
   "git",
+  "Firebase",
 ];

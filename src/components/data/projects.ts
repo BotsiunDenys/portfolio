@@ -8,8 +8,32 @@ interface Projects {
 }
 export const projects: Array<Projects> = [
   {
-    name: "Dringgle",
+    name: "Cho-cho-pizza",
     id: 1,
+    link: "https://cho-cho-pizza-delivery.web.app/",
+    description:
+      "// Web app for pizza restaurant with opportunity to make orders. Created with authorization and authentication using JWT tokens. To log in as admin use name and password 'admin'.",
+    img: "../../img/pizza.jpg",
+    stack: [
+      "Webpack",
+      "React",
+      "Typescript",
+      "React Router",
+      "Redux toolkit",
+      "Redux persist",
+      "Tailwind",
+      "CSS",
+      "Formik + yup",
+      "Firebase",
+      "Adaptive design",
+      "Node JS",
+      "Express",
+      "MongoDB",
+    ],
+  },
+  {
+    name: "Dringgle",
+    id: 2,
     link: "https://dringgle.vercel.app/",
     description:
       "// Dringgle is a website for searching an alcoholic cocktails and receipts by different parameters.",
@@ -27,7 +51,7 @@ export const projects: Array<Projects> = [
   },
   {
     name: "Portfolio",
-    id: 2,
+    id: 3,
     link: "",
     description: "// Portfolio website",
     img: "../../img/portfolioScreen.jpg",
@@ -45,18 +69,10 @@ export const projects: Array<Projects> = [
   },
   {
     name: "comfy",
-    id: 3,
+    id: 4,
     link: "https://comfy-store-app.vercel.app/",
     description: "// Furniture store",
     img: "../../img/comfyScreen.jpg",
     stack: ["Javascript", "SCSS", "HTML", "Adaptive design"],
-  },
-  {
-    name: "e-commerce layout",
-    id: 4,
-    link: "https://ecommerse-layout.vercel.app/",
-    description: "// Pixel perfect layout build from figma design",
-    img: "../../img/layoutScreen.jpg",
-    stack: ["HTML", "CSS", "Adaptive design"],
   },
 ];
